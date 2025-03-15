@@ -17,12 +17,11 @@
 
 /* ---- Parte 3: Reglas Gramaticales ---- */
 %%
-program:
-    NUMERO OPERADOR NUMERO{
-        printf("Correcto\n");
-    }
-    ;
-
+program: program expression | expression;
+expression:
+	NUMERO OPERADOR NUMERO{
+		printf("Correcto.\n");
+	};
 %%
 
 /* ---- Parte 4: Programa Principal ---- */
