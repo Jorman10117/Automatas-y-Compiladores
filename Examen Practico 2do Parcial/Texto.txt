@@ -1,0 +1,21 @@
+#include <stdio.h>
+
+int main() {
+    // Este es un comentario simple de una línea
+    printf("Hola, mundo!\n");
+
+    // Comentario simple número dos
+    int x = 10;
+
+    /* Este es un comentario multilínea
+       que ocupa varias líneas.
+       Se termina con un asterisco y barra */
+    x = x + 5;
+
+    // Comentario simple número tres
+    printf("El valor de x es: %d\n", x);
+
+    /* Otro comentario multilínea
+       que también se extiende por varias líneas */
+    return 0;
+}
